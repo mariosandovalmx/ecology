@@ -101,7 +101,57 @@
 												<li><a href="https://mariosandovalmx.github.io/tlamatini-website/" class="button primary fit"> Ir al sitio web </a></li>
 								            </ul>
 										</div>
-								    </div>
+                                
+                                
+                         
+                                </section>
+                                
+                                
+                                
+                                
+                                
+                                
+                        <section class="post">
+                            <header class="major">
+                                <span class="date"> </span>
+                        <h1>ggsmatr</h1>
+                       <p style="text-align:left"; text-indent: 30px;> This package allows generating ggplot-based scatter plots using the coefficients of the Major Axes Estimation (Standardized) fitted with the smatr package in R.
+                        
+                        Usage example:
+                        </p>
+                     
+                                
+<pre ><code>
+library(ggsmatr)
+library(ggplot2)
+library(smatr)
+fit = sma(Yaxis ~ Xaxis + Sex, data = df,shift=T, elev.test=T)
+summary(fit)
+                        
+ggsmatr(data =  df, groups = "Sex", xvar =  "Xaxis", yvar = "Yaxis", sma.fit =  fit) + 
+theme(legend.position = "top", legend.title=element_blank())+ 
+ylab("Y axis")+ 
+xlab("X axis")+ 
+theme(legend.position = "top")
+</code></pre>
+                        <br />
+                        
+                        <img src="images/ggsmatr.jpeg" alt="Paris" width="400" height="400">
+
+                                
+                        <h3>To install a development version of the package from GitHub:</h3>
+                                    <blockquote>
+                                        if (!require("remotes")) install.packages("remotes")<br />
+                                        remotes::install_github("mariosandovalmx/ggsmatr")
+                        </blockquote>
+                      
+                       
+                        
+                        </div>
+                        
+                        
+                        
+                    
                                 
                                 
 
@@ -110,7 +160,7 @@
                                 
 							</section>
 
-					</div>
+				
 
 				
 

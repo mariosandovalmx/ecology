@@ -122,22 +122,23 @@
                      
                                 
 <pre ><code>
+data(iris)
 library(ggsmatr)
-library(ggplot2)
 library(smatr)
-fit = sma(Yaxis ~ Xaxis + Sex, data = df,shift=T, elev.test=T)
-summary(fit)
-                        
-ggsmatr(data =  df, groups = "Sex", xvar =  "Xaxis", yvar = "Yaxis", sma.fit =  fit) + 
-theme(legend.position = "top", legend.title=element_blank())+ 
-ylab("Y axis")+ 
-xlab("X axis")+ 
-theme(legend.position = "top") + 
-scale_color_manual(values = c("FARMLAND" = "red", "FOREST" = "blue"))
+library(ggplot2)
+data(iris)
+fit <- sma(Petal.Width ~ Petal.Length+ Species, data=iris)
+windows(5,5)
+ggsmatr(data =  iris, groups = "Species", xvar =  "Petal.Length",
+        yvar = "Petal.Width", sma.fit =  fit) xlab("x axis name") + ylab("y axis name") +theme(legend.position = "right",
+                                                       legend.title=element_blank()) +
+  scale_colour_manual(values = c("black","firebrick", "cornflowerblue"))
+        
+  
 </code></pre>
                         <br />
                         
-                        <img src="images/ggsmatr.jpeg" alt="Paris" width="400" height="400">
+                        <img src="images/ggsmatr2.jpeg" alt="Paris" width="400" height="400">
 
                                 
                         <h3>To install a development version of the package from GitHub:</h3>
@@ -145,22 +146,15 @@ scale_color_manual(values = c("FARMLAND" = "red", "FOREST" = "blue"))
                                         if (!require("remotes")) install.packages("remotes")<br />
                                         remotes::install_github("mariosandovalmx/ggsmatr")
                         </blockquote>
+                        
+                        <div class="col-6 col-12-small">
+											<ul class="actions stacked">
+												<li><a href="ggsmatr-vignette.html" class="button primary fit"> Example </a></li>
+								            </ul>
+										</div>
                       
                        
-                        
-                        </div>
-                        
-                        
-                        
-                    
                                 
-                                
-
-
-                                
-                                
-							</section>
-
 				
 
 				

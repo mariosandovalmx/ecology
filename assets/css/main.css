@@ -3958,7 +3958,7 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: calc(100% - rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -4241,7 +4241,7 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
+					padding: 0;
 				}
 
 					#footer > section.split.contact > section > * {
@@ -4276,7 +4276,7 @@ input, select, textarea {
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						padding: 0;
 					}
 
 					#footer > section.split.contact > section.alt {

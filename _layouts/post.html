@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<article class="post">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+            </time>
+        </p>
+    </header>
+
+    <div class="post-content">
+        {% if page.image %}
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
+            style="width:100%; max-height:400px; object-fit:cover; margin-bottom:2rem;">
+        {% endif %}
+
+        {{ content }}
+    </div>
+    <div style="margin-top: 3rem;">
+        <a href="{{ '/publications-es.html' | relative_url }}" class="btn btn-outline">&larr; Volver a Resúmenes</a>
+    </div>
+</article>

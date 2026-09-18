@@ -2643,7 +2643,7 @@ input, select, textarea {
 		.software-body h3 {
 			font-size: 1.15rem;
 			color: #333;
-			border-bottom: 2px solid #3d8fc4;
+			border-bottom: 2px solid #5aab6e;
 			padding-bottom: 0.4rem;
 			margin: 2rem 0 1rem 0;
 		}
@@ -2666,7 +2666,7 @@ input, select, textarea {
 
 	.software-note {
 		background: #fff;
-		border-left: 4px solid #3d8fc4;
+		border-left: 4px solid #5aab6e;
 		padding: 1rem 1.3rem;
 		border-radius: 0 8px 8px 0;
 		margin: 0 0 1.75rem 0;
@@ -2685,9 +2685,9 @@ input, select, textarea {
 		.software-links a {
 			display: inline-block;
 			background: #fff;
-			color: #3d8fc4;
-			border: 1px solid rgba(61, 143, 196, 0.35);
-			border-bottom: 1px solid rgba(61, 143, 196, 0.35);
+			color: #5aab6e;
+			border: 1px solid rgba(90, 171, 110), 0.35);
+			border-bottom: 1px solid rgba(90, 171, 110), 0.35);
 			font-size: 0.82rem;
 			font-weight: 700;
 			padding: 0.4em 0.95em;
@@ -2696,9 +2696,9 @@ input, select, textarea {
 		}
 
 			.software-links a:hover {
-				background: #3d8fc4;
+				background: #5aab6e;
 				color: #fff;
-				border-color: #3d8fc4;
+				border-color: #5aab6e;
 			}
 
 	.software-figure {
@@ -2750,7 +2750,7 @@ input, select, textarea {
 	}
 
 	code {
-		background: rgba(61, 143, 196, 0.12);
+		background: rgba(90, 171, 110), 0.12);
 		color: #2a4a5a;
 		padding: 0.08em 0.35em;
 		border-radius: 4px;
@@ -2766,7 +2766,7 @@ input, select, textarea {
 
 	.software-cta {
 		display: inline-block;
-		background: #3d8fc4;
+		background: #5aab6e;
 		color: #fff;
 		font-size: 0.85rem;
 		font-weight: 700;
@@ -2778,7 +2778,7 @@ input, select, textarea {
 	}
 
 		.software-cta:hover {
-			background: #4db8ff;
+			background: #6fbf82;
 			color: #fff;
 			border: none;
 		}
